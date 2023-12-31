@@ -21,8 +21,9 @@ IAM is a web service that helps securely control access to AWS resources. It ena
 
 ## JSON Policies Syntax Example
 
-```
 json
+```
+
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -36,9 +37,9 @@ json
         }
     ]
 }
+```
 Explanation
 "Version": "2012-10-17": Indicates the policy language version.
 "Effect": "Allow": Specifies whether the statement allows or denies access.
 "Action": ["s3:", "s3-object-lambda:"]: Lists the actions allowed, here, all S3 and S3 Object Lambda actions.
 "Resource": "*": Specifies the resources to which the actions apply. In this case, it applies to all resources (*).
-```
